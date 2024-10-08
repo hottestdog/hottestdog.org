@@ -1,0 +1,11 @@
+@tailwind utilities;
+
+@font-face {
+  font-family: "Kode Mono";
+  src: url("../../public/fonts/KodeMono-VariableFont_wght.ttf");
+  display: "swap";
+}
+
+body {
+  @apply font-kode-mono font-normal;
+}
