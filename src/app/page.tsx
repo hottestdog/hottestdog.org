@@ -82,7 +82,7 @@ export default function Home() {
       </p>
 
       <motion.div
-        className="w-48 h-48 mb-8 rounded-full border-4 border-yellow-300 shadow-lg bg-yellow-200 flex items-center justify-center overflow-hidden"
+        className="w-48 h-48 mb-8 shadow-lg flex items-center justify-center overflow-hidden rounded-full border-4 border-red-400"
         animate={{ rotate: 360 }}
         transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
       >
@@ -92,7 +92,7 @@ export default function Home() {
           transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
         ></motion.span>
         <Image
-          src="/hottest-dog-token.png"
+          src="/hog-token.jpg"
           alt="hotdog"
           width={100}
           height={100}
