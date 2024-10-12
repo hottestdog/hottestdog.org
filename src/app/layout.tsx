@@ -3,6 +3,7 @@ import "./globals.css";
 import "./fonts.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://hottestdog.org"),
   title: "Hottest Dog Token | Help this dog cool the F*CK down!",
   description:
     "Discover the Hottest Dog Token: A unique cryptocurrency project aimed at supporting dog charities in warm climates. Join our community and make a difference!",
