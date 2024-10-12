@@ -73,7 +73,7 @@ export default function Home() {
 
   return (
     <div className="pt-32 min-h-screen bg-gradient-to-br from-purple-600 via-orange-500 to-red-600 flex flex-col items-center justify-center p-4 text-white">
-      <h1 className="text-6xl font-black mb-4 text-center tracking-tighter uppercase">
+      <h1 className="text-6xl font-black mb-4 text-center tracking-tighter uppercase text-shadow-lg shadow-[rgba(0,0,0,0.25)]">
         Hottest Dog Token
       </h1>
 
@@ -100,7 +100,7 @@ export default function Home() {
         />
       </motion.div>
 
-      <div className="text-2xl sm:text-3xl font-bold mb-4">
+      <div className="text-xl md:text-3xl font-bold mb-4">
         1 HOG = {!price ? "Loading..." : `${price.toFixed(8)} USD`}
         <span
           className={`ml-2 ${
@@ -125,47 +125,56 @@ export default function Home() {
 
       <div className="mt-12 text-center">
         <motion.div
-          className="my-8 text-lg md:text-xl lg:text-2xl font-bold uppercase"
+          className="my-8  md:text-xl lg:text-2xl font-bold uppercase"
           animate={{ scale: [1, 1.1, 1] }}
           transition={{ repeat: Infinity, duration: 1.5 }}
         >
           🔥 Total Supply: 210,000,000 🔥
         </motion.div>
-        <ul className="sm:text-xl">
+        <ul className="sm:text-xl flex flex-col gap-4 text-left">
           <motion.li
-            className="mb-2"
+            className="flex items-center gap-6"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.5 }}
           >
-            <HandCoins className="inline-block mr-2" /> 20% (40m) of supply to
-            charities
+            <span className="flex shrink-0 items-center w-[60px] h-[60px] bg-gradient-to-br from-purple-400 to-purple-700 rounded-full justify-center">
+              <HandCoins className="inline-block" />
+            </span>
+            20% (40m) of supply to charities
           </motion.li>
           <motion.li
-            className="mb-2"
+            className="gap-6 flex items-center"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.7 }}
           >
-            <Droplets className="inline-block mr-2" /> 60% (126m) of supply to
-            liquidity pools
+            <span className="flex shrink-0 items-center w-[60px] h-[60px] bg-gradient-to-br from-purple-400 to-purple-700 rounded-full justify-center">
+              <Droplets className="inline-block" />
+            </span>
+            60% (126m) of supply to liquidity pools
           </motion.li>
           <motion.li
-            className="mb-2"
+            className="gap-6 flex items-center"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.9 }}
           >
-            <Users className="inline-block mr-2" /> 15% (31.5m) of supply to
-            community
+            <span className="flex shrink-0 items-center w-[60px] h-[60px] bg-gradient-to-br from-purple-400 to-purple-700 rounded-full justify-center">
+              <Users className="inline-block" />
+            </span>
+            15% (31.5m) of supply to community
           </motion.li>
           <motion.li
+            className="gap-6 flex items-center"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.9 }}
           >
-            <Code className="inline-block mr-2" /> 5% (10.5m) of supply to for
-            development
+            <span className="flex shrink-0 items-center w-[60px] h-[60px] bg-gradient-to-br from-purple-400 to-purple-700 rounded-full justify-center">
+              <Code className="inline-block" />
+            </span>
+            5% (10.5m) of supply to for development
           </motion.li>
         </ul>
       </div>
