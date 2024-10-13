@@ -141,7 +141,7 @@ export default function Home() {
             <span className="flex shrink-0 items-center w-[60px] h-[60px] bg-gradient-to-br from-purple-400 to-purple-700 rounded-full justify-center">
               <HandCoins className="inline-block" />
             </span>
-            20% (40m) of supply to charities
+            20% (42m) of supply to charities
           </motion.li>
           <motion.li
             className="gap-6 flex items-center"
